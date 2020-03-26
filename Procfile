@@ -1,1 +1,1 @@
-web: gunicorn application:application --log-file=-
+web: node index.js
