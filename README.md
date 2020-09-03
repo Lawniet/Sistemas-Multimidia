@@ -1,5 +1,5 @@
 # Sistemas-Multimídia
-Repositório de material desenvolvido no Trabalho , o qual foi solicitado pelo Prof. Me. [Leandro Vaguetti](https://www.escavador.com/sobre/3762616/leandro-vaguetti) como requisito parcial para obtenção de nota na disciplina.
+Repositório de material desenvolvido no Trabalho , o qual foi solicitado pelo [Prof. Me. Leandro Vaguetti](https://www.escavador.com/sobre/3762616/leandro-vaguetti) como requisito parcial para obtenção de nota na disciplina.
 
 O aplicativo foi baseado e desenvolvido a partir do #DioLabs de javascript "Recriando o jogo da cobrinha com JavaScript", ofertada pela Digital Innovation One e ministrada por Gabriela Pinheiro ([@gabriela-pinheiro](https://github.com/gabriela-pinheiro)). A partir dos conceitos aprendidos nesta Lab, foi realizado um planejamento de releitura para jogo a fim de obter uma versão moderna disponível nas versões de desktop e dispositivos móveis.
 
