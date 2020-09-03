@@ -18,8 +18,11 @@ As tecnologias a serem utilizadas estão listadas abaixo com sua função dentro
 ### :seedling: Front-end, Back-end e Ambiente de desenvolvimento
 
 Foi planejado um estilo visual de jogo minimalista e moderno, mas matendo a essencia original do jogo, logo foi utilizado a ferramenta de desenhos vetoriais InkScape para confecção do cenário e personagens.
+
 A fim de ter uma melhor renderização dos componentes utilizamos o React JS, pois esta é uma biblioteca JavaScript de opensource com foco em criar interfaces de usuário em páginas web, podendo ser utilizada tanto para desktop quanto em plataformas mobile. 
+
 Para o ambiente de desenvolvimento utilizamos Node.js, que por server-side permite o gerenciamento de pacotes e dependências de forma mais ágil.
+
 Além disto foi  utilizada a biblioteca de jogos Phaser 3, uma vez que esta é uma framework de jogos 2D para a criação de jogos HTML5 para desktop e dispositivos móveis. Além disso foram adicionadas as funções de Pontuação (Score), Vidas (Lifes) e Dificuldade (Difficulty). 
 
 ### :information_source: Pontuação (Score), Vidas (Lifes) e Dificuldade (Difficulty)
