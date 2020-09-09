@@ -1,4 +1,4 @@
-# Sistemas-Multimídia
+# Sistemas-Multimídia 
 Repositório de material desenvolvido no Trabalho de Sistemas Multimídia, o qual foi solicitado pelo [Prof. Me. Leandro Vaguetti](https://www.escavador.com/sobre/3762616/leandro-vaguetti) como requisito parcial para obtenção de nota na disciplina.
 
 O aplicativo foi baseado e desenvolvido a partir do #DioLabs (desafio prático do bootcamp "Code Like a Fullstack Girl") de javascript "Recriando o jogo da cobrinha com JavaScript", ofertada pela Digital Innovation One e ministrada por [Gabriela Pinheiro](https://github.com/gabriela-pinheiro). A partir dos conceitos aprendidos nesta Lab, foi realizado um planejamento de releitura para jogo a fim de obter uma versão moderna disponível nas versões de desktop e dispositivos móveis.
@@ -38,6 +38,8 @@ Além disso foi planejado um sistema de vidas, na qual quando o jogador colide c
 ## :link: Versões de execução disponíveis
 
 Protótipo: [SGMR no Quant-UX](https://www.quant-ux.com/#/test.html?h=a2aa10aLfAhEboZUiZIBkCTpNzrROA9MLF3Wc2c9MZrKyyuF8FXZokhA1kYK)
+
+Ambiente de desenvolvimento: [![Run on Repl.it](https://repl.it/badge/github/Lawniet/Sistemas-Multimidia)](https://repl.it/github/Lawniet/Sistemas-Multimidia)
 
 Versão jogável:
 
