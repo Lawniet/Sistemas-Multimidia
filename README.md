@@ -41,6 +41,6 @@ Protótipo: [SGMR no Quant-UX](https://www.quant-ux.com/#/test.html?h=a2aa10aLfA
 
 Versão jogável:
 
-Documentação:
+Documentação: [Drive de SGMR](https://drive.google.com/drive/folders/0B4Jrwbi8IaMCOGJRU0x5OHF2RDg?usp=sharing)
 
 Ingressar na equipe Dev: [Team Dev SGMR no Repl.it](https://repl.it/teams/join/ctwpskrrfslhgiqlmovgudkgjthaotbk-SGMR)
