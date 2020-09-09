@@ -37,7 +37,7 @@ Além disso foi planejado um sistema de vidas, na qual quando o jogador colide c
 
 ## :link: Versões de execução disponíveis
 
-Protótipo:
+Protótipo: [SGMR no Quant-UX](https://www.quant-ux.com/#/test.html?h=a2aa10aLfAhEboZUiZIBkCTpNzrROA9MLF3Wc2c9MZrKyyuF8FXZokhA1kYK)
 
 Versão jogável:
 
