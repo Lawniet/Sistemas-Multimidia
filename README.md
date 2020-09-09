@@ -43,3 +43,4 @@ Versão jogável:
 
 Documentação:
 
+Ingressar na equipe Dev: [Team Dev SGMR no Repl.it](https://repl.it/teams/join/ctwpskrrfslhgiqlmovgudkgjthaotbk-SGMR)
