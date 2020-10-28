@@ -1,4 +1,8 @@
 # Sistemas-Multimídia 
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2ef72d6f457b4617ada9ce745667d7f4)](https://www.codacy.com/gh/Lawniet/Sistemas-Multimidia/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Lawniet/Sistemas-Multimidia&amp;utm_campaign=Badge_Grade)
+[![GitHub license](https://img.shields.io/github/license/Lawniet/Sistemas-Multimidia)](https://github.com/Lawniet/Sistemas-Multimidia/blob/master/LICENSE)
+
 Repositório de material desenvolvido no Trabalho de Sistemas Multimídia, o qual foi solicitado pelo [Prof. Me. Leandro Vaguetti](https://www.escavador.com/sobre/3762616/leandro-vaguetti) como requisito parcial para obtenção de nota na disciplina.
 
 O aplicativo foi baseado e desenvolvido a partir do #DioLabs (desafio prático do bootcamp "Code Like a Fullstack Girl") de javascript "Recriando o jogo da cobrinha com JavaScript", ofertada pela Digital Innovation One e ministrada por [Gabriela Pinheiro](https://github.com/gabriela-pinheiro). A partir dos conceitos aprendidos nesta Lab, foi realizado um planejamento de releitura para jogo a fim de obter uma versão moderna disponível nas versões de desktop e dispositivos móveis.
