@@ -1,8 +1,9 @@
 	const config = {
 					type: Phaser.AUTO,
-					width: 700,
+					width: 600,
 					height: 500,
-					backgroundColor: '#b0ffe1',
+          //LightGreen
+					backgroundColor: '#90EE90',
 					physics: {
 						default: 'arcade',
 						arcade: {
@@ -37,13 +38,45 @@
 
 
 				function preload () {
-					this.load.image('food','logo192.png');
+					this.load.image('food','./assets/food.png');
 					this.load.image('body', './assets/body.png');
 					this.load.image('head', './assets/head.png');
+           this.load.image('bckgrnd', 'assets/scenario.png');
+          this.load.image('stone', './assets/stone.png');
+            //this.load.spritesheet('head', '.assets/dude.png',{ frameWidth: 32, frameHeight: 48 });
 					//this.load.spritesheet('head', 'assets/righthead.png', 85, 85, 12);
 				}
 
 				function create () {
+          this.add.image(300, 251, 'bckgrnd');
+          
+         /* obstacle = this.physics.add.staticGroup();
+          obstacle.create(550, 30, 'stone').setScale(0.25).refreshBody();
+          obstacle.create(550, 470, 'stone').setScale(0.25).refreshBody();
+          obstacle.create(50, 30, 'stone').setScale(0.25).refreshBody();
+          obstacle.create(50, 470, 'stone').setScale(0.25).refreshBody();*/
+
+          var Obstacle = new Phaser.Class({
+
+						Extends: Phaser.GameObjects.Image,
+						initialize:
+
+						function Obstacle (scene, x, y)  {
+							Phaser.GameObjects.Image.call(this, scene)
+
+							this.setTexture('stone');
+							this.setScale(0.25, 0.20);
+							this.setPosition(x * 16, y * 16);
+							this.setOrigin(0);
+
+							this.total = 0;
+
+							scene.children.add(this);
+						},
+
+						eat: function () { this.total++; }
+					});
+
 					var Food = new Phaser.Class({
 
 						Extends: Phaser.GameObjects.Image,
@@ -53,7 +86,7 @@
 							Phaser.GameObjects.Image.call(this, scene)
 
 							this.setTexture('food');
-							this.setScale(0.07, 0.07);
+							this.setScale(0.21, 0.21);
 							this.setPosition(x * 16, y * 16);
 							this.setOrigin(0);
 
@@ -169,6 +202,27 @@
 							}
 							else { return false; }
 						},
+            downGrow: function () {
+              if(life > 0)
+              {
+                life -= 1;
+                document.getElementById("life").innerHTML = "Lifes: "+life;
+              }
+              alert('Fim de jogo');
+              console.log('dead');
+              this.alive = false;
+              return false;
+						},
+            	collideWithStone: function (obstacle) {
+							if (this.head.x === obstacle.x && this.head.y === obstacle.y) {
+								this.downGrow();
+								//  Para cada 5 itens de comida a velocidade é decrementada
+								if (this.speed > 20) { this.head.setOrigin(0); }
+								
+								return true;
+							}
+							else { return false; }
+						},
 						updateGrid: function (grid) {
 							//  Removendo todas as peças do corpo para posições válidas
 							this.body.children.each(function (segment) {
@@ -179,9 +233,15 @@
 							return grid;
 						}
 					});
+
 					// Posições iniciais da cobra e comida
 					food = new Food(this, 3, 4);
 					snake = new Snake(this, 8, 8);
+          // Obstaculos
+          obstacle = new Obstacle(this, 1, 1);
+          obstacle = new Obstacle(this, 30, 1);
+          obstacle = new Obstacle(this, 30, 27);
+          obstacle = new Obstacle(this, 1, 27);
 					//  Criando os controles do jogo
 					cursors = this.input.keyboard.createCursorKeys();
 				}
@@ -199,11 +259,12 @@
 					if (snake.update(time)) {
 						//  A cada atualização de frame precisamos verificar a colisão com a camida
 						if (snake.collideWithFood(food)) { repositionFood(); }
+            if (snake.collideWithStone(obstacle)) { }
 					}
 				}
 
 				/**
-				* Método para verificação de área, inicialmente consideramos todos os pontos
+				* Metodo para verificação de área, inicialmente consideramos todos os pontos
 				* (x,y) disponível para guadarmos a comida.
 				* @method repositionFood
 				* @return {boolean} verdadeiro se o grid puder ser utilizado, falso do contrário 
@@ -215,10 +276,10 @@
 					 *  para repor a comida */
 					var testGrid = [];
 
-					for (var y = 0; y < 30; y++) {
+					for (var y = 0; y < 35; y++) {
 						testGrid[y] = [];
 
-						for (var x = 0; x < 40; x++) {
+						for (var x = 0; x < 45; x++) {
 							testGrid[y][x] = true;
 						}
 					}
@@ -228,8 +289,8 @@
 					//  Para eliminar falsas posições
 					var validLocations = [];
 
-					for (var y = 0; y < 30; y++) {
-						for (var x = 0; x < 40; x++) {
+					for (var y = 0; y < 25; y++) {
+						for (var x = 0; x < 35; x++) {
 							if (testGrid[y][x] === true) {
 								//  Testando a validade da posição
 								validLocations.push({ x: x, y: y });
@@ -237,7 +298,7 @@
 						}
 					}
 					if (validLocations.length > 0) {
-						//  Usando o método RND para gerar posições aleatórias para a comida
+						//  Usando o metodo RND para gerar posições aleatórias para a comida
 						var pos = Phaser.Math.RND.pick(validLocations);
 
 						//  Setado o valor
