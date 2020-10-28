@@ -9,6 +9,7 @@
   "author": "Lauany Reis da Silva",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "phaser": "^3.24.1"
   }
 }
