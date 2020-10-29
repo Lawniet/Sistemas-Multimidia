@@ -18,6 +18,8 @@ body {
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.16.2/phaser.min.js"></script>
     <script src="./script.js"></script>
+    <!-- Arquivo JSON com dados-->
+    <script type="text/javascript" src="https://my-json-server.typicode.com/Lawniet/SnakeDataset/Instructions"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
@@ -26,10 +28,17 @@ body {
 		<div class="tab-content">
 			<div id="home" class="container tab-pane active"><br>
           <br/><br/>
-          <p>Jogo elaborado como trabalho da disciplina de Sistemas Multimídia, ministrada pelo professor Leandro Vaguetti.</p>
+          <p id="instructions"></p>
           <div id="score"></div>
           <div id="life"></div>
 			</div>
 		</div>
+    <script>
+      var informe = JSON.parse("https://my-json-server.typicode.com/Lawniet/SnakeDataset/Instructions");
+// Requisição ao My JSON Server
+$(document).ready(function() {
+        $("#instructions").append(informe[0].info);
+        });
+    </script>
 	</body>
 </html>
