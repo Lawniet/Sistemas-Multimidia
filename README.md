@@ -41,7 +41,7 @@ Além disso foi planejado um sistema de vidas, na qual quando o jogador colide c
 
 Protótipo: [SGMR no Quant-UX](https://www.quant-ux.com/#/test.html?h=a2aa10aLfAhEboZUiZIBkCTpNzrROA9MLF3Wc2c9MZrKyyuF8FXZokhA1kYK)
 
-Versão jogável:[SGMR](https://sgmr.herokuapp.com/)
+Versão jogável: [SGMR](https://sgmr.herokuapp.com/)
 
 Documentação: [Drive de SGMR](https://drive.google.com/drive/folders/0B4Jrwbi8IaMCOGJRU0x5OHF2RDg?usp=sharing)
 
